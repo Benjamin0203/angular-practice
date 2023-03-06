@@ -9,6 +9,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 5px;
       h4 {
         text-transform: uppercase;
         border-left: 5px solid #8bc4bf;
@@ -20,8 +21,30 @@
         margin-right: 20px;
       }
     }
+    .movies-thumbnail {
+      display: flex;
+      justify-content: space-between;
+      .movie {
+
+        .cover {
+          padding: 5px;
+          img {
+            border-radius: 5px;
+          }
+        }
+      }
+      .detail {
+        width: 180px;
+        .name {
+          font-weight: bold;
+          height: 50px;
+          margin-top: 5px;
+          cursor: pointer;
+        }
+      }
+    }
   }
-  .ppluar-movies {
+  .popluar-movies {
     width: 25%;
     min-height: calc(100vh - 80px);
   }
