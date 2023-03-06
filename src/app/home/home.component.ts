@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   trendingMovies: any;
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.getTrendingMovies();
@@ -19,9 +19,11 @@ export class HomeComponent implements OnInit {
 this.http.get('http://localhost:4200/assets/data/trending-movies.json').subscribe((movies) => {
   console.log(movies);
   this.trendingMovies = movies;
-  console.log('====================================');
-  console.log(movies);
-  console.log('====================================');
+  // console.log(movies);
   });
+
+}
+goToMovie(type: String, id: String) {
+  this.router.navigate(['movie', type, id]);
 }
 }
