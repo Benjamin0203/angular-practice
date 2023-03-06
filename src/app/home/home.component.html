@@ -14,6 +14,9 @@
           <div class="detail">
             <div class="name">{{movie.name}}</div>
             <div class="rating">{{movie.rating}}</div>
+            <div class="rating">
+              <app-start-rating [rating]="movie.rating" [isReadOnly]="true"></app-start-rating>
+            </div>
           </div>
         </div>
       </div>
