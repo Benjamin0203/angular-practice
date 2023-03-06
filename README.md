@@ -16,6 +16,10 @@ ng serve
 
 ## Showcase
 
+https://user-images.githubusercontent.com/25517478/223190326-5a4c24eb-5b2c-4dba-9a4d-516e42a26292.mov
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
